@@ -1,5 +1,8 @@
-Create Resource
+Create ResourceGroup
 
+https://learn.microsoft.com/en-us/cli/azure/azure-cli-vm-tutorial-3?view=azure-cli-latest&tabs=powershell#code-try-1
+
+//az vm create --resource-group zenprod --name zenvm --image Ubuntu2204 --size Standard_B1s --location eastus2 --admin-username azureuser --generate-ssh-keys --output json --verbose
 
 PS C:\WINDOWS\system32> az vm create `
 >>     --resource-group $resourceGroup `
