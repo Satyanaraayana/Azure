@@ -1,0 +1,27 @@
+Create Resource
+
+
+PS C:\WINDOWS\system32> az vm create `
+>>     --resource-group $resourceGroup `
+>>     --name $vmName `
+>>     --image Ubuntu2204 `
+>>     --size Standard_B1s `
+>>     --location eastus2 `
+>>     --admin-username azureuser `
+>>     --generate-ssh-keys `
+>>     --output json `
+>>     --verbose
+The default value of '--size' will be changed to 'Standard_D2s_v5' from 'Standard_DS1_v2' in a future release.
+Use existing SSH public key file: C:\Users\komal\.ssh\id_rsa.pub
+{
+  "fqdns": "",
+  "id": "/subscriptions/1e2644a6-7cc5-45f3-b110-bce5f7286fe9/resourceGroups/zenprod/providers/Microsoft.Compute/virtualMachines/bjc-network",
+  "location": "eastus2",
+  "macAddress": "7C-1E-52-9D-EF-C5",
+  "powerState": "VM running",
+  "privateIpAddress": "10.0.0.4",
+  "publicIpAddress": "52.179.180.41",
+  "resourceGroup": "zenprod"
+}
+Command ran in 117.013 seconds (init: 0.320, invoke: 116.693)
+PS C:\WINDOWS\system32>
